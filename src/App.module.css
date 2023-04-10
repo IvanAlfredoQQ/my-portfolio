@@ -1,0 +1,50 @@
+.MainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FrameContainer{
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 780px;
+    max-width: 1280px;
+    padding: 5px;
+    border-radius: 1em;
+}
+.InnerContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #1D1D20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.InformationContainer{
+    display: flex;
+    gap: 1em;
+    margin: 0em 1em;
+}
+.About{
+    width: 75%;
+}
+.colored{
+    color: #00ADB5;
+}
+.h1{
+    color: #FFFFFF;
+}
+.p{
+    color: #D1D1D1;
+}
+.a{
+    color: #CD6C88;
+}
+.a:hover{
+    color: #cda86c;
+}
