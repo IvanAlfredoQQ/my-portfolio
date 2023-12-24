@@ -5,10 +5,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-size: 16px;
 }
 body{
   background-color: #1D1D20 ;
   margin: 0px;
   color: #D1D1D1;
   font-family: system-ui;
+}
+
+body h1, body h2{
+  color: #FFF;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+body p {
+  color: #D1D1D1;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+body .colored{
+  color: #00ADB5;
+}
+body a {
+  color: #CD6C88;
+}
+body a:hover{
+  color: #cda86c;
 }
