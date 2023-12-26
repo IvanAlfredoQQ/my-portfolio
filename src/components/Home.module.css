@@ -28,46 +28,53 @@
     width: 80vw;
     padding: 5px;
     border-radius: 1rem;
+    position: relative;
 }
 .InnerContainer{
-    width: 100%;
-    max-height: 100%;
-    min-height: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
     background-color: #1D1D20;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     border-radius: 1rem;
-    overflow-y: auto;
+    overflow:auto;
+}
+.InformationContainer{
+    width: 90%;
+    flex-grow: 1;
+    gap: 1em;
+    overflow-y: hidden;
+    display: flex;
 }
 .Header{
-    margin-top: 1rem;
     width: 90%;
+    height: 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
 }
 .Header img{
     height: 5vw;
+    
 }
 .Logo {
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 0 15px;
 }
 .Logo:hover {
-    transform: scale(1.4); /* Increase the size on hover */
-    color: #00ff75; /* Change color on hover */
+    transform: scale(1.4);
 }
 .Footer{
     width: 90%;
-}
-.InformationContainer{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    height: 25%;
+    padding: 0.5em 0;
+    overflow: auto;
 }
 .About{
-    min-width: 49%;
+    overflow-y: auto;
+    flex-grow: 1;
 }

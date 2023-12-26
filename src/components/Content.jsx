@@ -2,9 +2,12 @@ import React from 'react'
 import styles from './Home.module.css';
 
 export default function Content() {
+  const mainContent = {
+    width: "200%",
+  }
   return (
     <div className={styles.InformationContainer}>
-              <div className={styles.About}>
+              <div className={styles.About} style={mainContent}>
                 <h1>Hello! I'm Ivan</h1>
                 <h2>Fullstack web developer</h2>
                 <p>

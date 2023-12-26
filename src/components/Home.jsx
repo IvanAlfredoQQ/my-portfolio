@@ -3,10 +3,11 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 
-export default function Home() {
+export default function Home(props) {
+  const mainColors = JSON.parse(localStorage.getItem('mainColors')) || {};
   return (
     <>
-      <Header />
+      <Header mainColors={mainColors}/>
       <Content />
       <Footer />
     </>

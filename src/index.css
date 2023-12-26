@@ -7,6 +7,17 @@
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
 }
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #d1d1d143;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #d1d1d1;
+  border-radius: 0.5rem;
+}
 body{
   background-color: #1D1D20 ;
   margin: 0px;

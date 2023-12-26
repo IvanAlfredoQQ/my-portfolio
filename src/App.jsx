@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import styles from "./components/Home.module.css";
 import { useEffect, useState } from "react";
 
@@ -11,20 +11,24 @@ function App() {
   useEffect(() => {
     const optionalColors = {mainColor:'#CDA86C', secondaryColor:'#CD6C88'};
     const randomInteger = Math.floor(Math.random() * 4);
-    console.log("random", randomInteger)
+
     if(randomInteger > 2){
       setMainColors(optionalColors);
+      localStorage.setItem('mainColors', JSON.stringify(optionalColors));
+    } else{
+      localStorage.setItem('mainColors', JSON.stringify(mainColors));
     }
   },[])
   
   const containerColorStyle = {
     backgroundImage: `linear-gradient(163deg, ${mainColors.mainColor} 0%, ${mainColors.secondaryColor} 100%)`
   }
+
   return (
       <div className={styles.MainContainer}>
         <div className={styles.FrameContainer} style={containerColorStyle}>
           <div className={styles.InnerContainer}>
-           <Outlet/>
+            <Outlet/>
           </div>
         </div>
       </div>
